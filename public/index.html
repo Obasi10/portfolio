@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/IMG-20211001-WA0003.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#131718" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/style.css" />
+    <meta
+      name="description"
+      content="Innocent Chukwuma Obasi Portfolio"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/IMG-20211001-WA0003.jpg" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Innocent Obasi Portfolio</title>
+  </head>
+  <body class="new is-preload">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="wrapper" class="fade-in">
+      <div id="not" style="display:flex">
+        <div class="note" role="status">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+            <path class="path" d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+            <path class="path" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          </svg>
+        </div>
+        <div class="loading" style="font-size: 14px;">Loading</div>
+      </div>
+      <div id="load">
+        <div id="root"></div>
+      </div>
+    </div>
+    <script>
+        document.getElementById('load').style.display='none';
+        window.addEventListener('load',hide)
+        function hide(){
+          document.getElementById('not').style.display='none'
+          document.getElementById('load').style.display='block'
+        }
+        document.getElementById("wrapper").style.minHeight=""+screen.availHeight+"px"
+    </script>
+
+		<script src="%PUBLIC_URL%/jquery.min.js"></script>
+		<script src="%PUBLIC_URL%/jquery.scrollex.min.js"></script>
+		<script src="%PUBLIC_URL%/jquery.scrolly.min.js"></script>
+		<script src="%PUBLIC_URL%/browser.min.js"></script>
+		<script src="%PUBLIC_URL%/breakpoints.min.js"></script>
+		<script src="%PUBLIC_URL%/util.js"></script>
+		<script src="%PUBLIC_URL%/main.js"></script>
+  </body>
+</html>
